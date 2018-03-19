@@ -1,16 +1,24 @@
 package com.company;
 
 public class Gate {
-    public String GateName;
+    private String GateName;
     private Double[][] GateMatrix;
-    private int ArgCount;
+    private Integer ArgCount;
 
-    Gate(String gateName, int argCount){
+    public String getGateName() { return GateName;}
+    public Integer getArgCount() { return ArgCount;}
+    public Double[][] getGateMatrix() { return GateMatrix;}
+
+    public void setGateName(String gateName) { GateName = gateName;}
+    public void setArgCount(Integer argCount) { ArgCount = argCount;}
+    public void setGateMatrix(Double[][] gateMatrix) { GateMatrix = gateMatrix;}
+
+    public Gate(String gateName, Integer argCount){
         GateName = gateName;
         ArgCount = argCount;
     }
 
-    Gate(String gateName, int argCount, Double[][] gateMatrix) throws Exception{
+    public Gate(String gateName, Integer argCount, Double[][] gateMatrix) throws Exception{
         GateName = gateName;
         ArgCount = argCount;
         if (MatrixIsValid(gateMatrix))
@@ -21,6 +29,4 @@ public class Gate {
         //TODO: write validation if matrix is appropriate for qubit permutation
         return true;
     }
-
-
 }
