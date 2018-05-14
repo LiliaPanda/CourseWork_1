@@ -158,7 +158,6 @@
 -define:UNITY_TEAM_LICENSE
 Assets/Scripts/Complex.cs
 Assets/Scripts/HistogramBuild.cs
-Assets/Scripts/Main.cs
 Assets/Scripts/Operators.cs
 Assets/Scripts/SchemeBuild.cs
 -r:/opt/Unity/Editor/Data/Mono/lib/mono/unity/System.Runtime.Serialization.dll

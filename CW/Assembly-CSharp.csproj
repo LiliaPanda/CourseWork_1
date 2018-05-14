@@ -53,7 +53,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Complex.cs" />
      <Compile Include="Assets\Scripts\HistogramBuild.cs" />
-     <Compile Include="Assets\Scripts\Main.cs" />
      <Compile Include="Assets\Scripts\Operators.cs" />
      <Compile Include="Assets\Scripts\SchemeBuild.cs" />
  <Reference Include="UnityEngine.CoreModule">
